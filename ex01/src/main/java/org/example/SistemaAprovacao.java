@@ -18,10 +18,13 @@ public class SistemaAprovacao {
                 notasAcimaDeNove = false;
             }
         }
-        double media = soma / 4;
+        double media = soma / notas.length;
 
         if (notasAcimaDeNove) {
             media *= 1.10;
+            if(media > 10.00){
+                media = 10.00;
+            }
         }
 
         // Determina o status do aluno

@@ -3,6 +3,7 @@ package org.example;
 import java.util.Scanner;
 
 public class Fatorial {
+
     public static int calcular(int n) throws ValorInvalido {
         if(n < 0){
             throw new ValorInvalido("Valor inválido: " + n);
@@ -19,7 +20,7 @@ public class Fatorial {
             try {
                 System.out.print("Digite um número inteiro positivo para calcular o fatorial: ");
                 int numero = sc.nextInt();
-                int resultado = calcular(numero);
+                long resultado = calcular(numero);
                 System.out.println("Fatorial de " + numero + " é " + resultado);
                 break;
             } catch (ValorInvalido e) {
