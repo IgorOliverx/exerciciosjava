@@ -7,7 +7,7 @@ public class Curso {
     public void adicionarAluno(Aluno aluno) {
         for (int i = 0; i < alunos.length; i++) {
             if (alunos[i] == null) {
-                alunos[i] = aluno.nome;
+                alunos[i] = aluno.getNome();
                 break;
             }
         }
